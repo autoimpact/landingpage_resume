@@ -4,4 +4,4 @@
 
 The project is for demostrating Shirlyn's resume.
 
-<img src="" alt="">
+<img src="https://github.com/autoimpact/landingpage_resume/blob/master/readme/cover_img.png" alt="cover-image">
