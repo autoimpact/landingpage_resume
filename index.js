@@ -7,8 +7,10 @@ const portfolios = [
   { category: 'project', class: 'p-three', h1: '保德信人壽 X 社企流', h2: '做你人生的財務長', tag: '#專案管理 #商業開發', ref: 'https://pot-financialwellness.seinsights.asia/' },
   { category: 'project', class: 'p-four', h1: '永齡教育基金會 X 社企流', h2: '明日農村', tag: '#專案管理 #商業開發', ref: 'http://www.rethinkingrural.seinsights.asia/' },
   { category: 'publication', class: 'p-five', h1: '', h2: '開路：社會企業的十堂課', tag: '#書籍共同作者', ref: 'https://www.books.com.tw/products/0010757662' },
-  { category: 'front-end', class: 'p-six', h1: '自主專案', h2: 'To-dos-List 小程式', tag: '#前端開發', ref: 'https://codepen.io/deseriez/full/oNWNLvL' },
-  { category: 'front-end', class: 'p-seven', h1: '自主專案', h2: '各地區氣象預報小工具', tag: '#前端開發 #API串接', ref: 'https://codepen.io/deseriez/full/eYvovzX' }
+  { category: 'front-end', class: 'p-six', h1: '自主專案', h2: 'To-dos-List 小程式', tag: '#HTML #CSS #Javascript', ref: 'https://github.com/autoimpact/to-dos-list' },
+  { category: 'front-end', class: 'p-seven', h1: '自主專案', h2: '各地區氣象預報小工具', tag: '#Ajax #API #Javscript', ref: 'https://github.com/autoimpact/weather_forecast' },
+  { category: 'front-end', class: 'p-eight', h1: '自主專案', h2: '個人 Resume 網站', tag: '#HTML #CSS #UIUX', ref: 'https://github.com/autoimpact/landingpage_resume' },
+  { category: 'front-end', class: 'p-nine', h1: '自主專案', h2: '社群頁面', tag: '#Ajax #API #Javscript', ref: 'https://github.com/autoimpact/social_media_page' }
 ]
 
 filterBar.addEventListener('click', function (event) {
