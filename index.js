@@ -2,7 +2,7 @@ const filterBar = document.querySelector('.filter-bar')
 const cardsWrap = document.querySelector('.card-wrap')
 
 const portfolios = [
-  { category: 'project', class: 'p-one', h1: '「為湛而戰」', h2: '海洋垃圾移除計畫', tag: '#群募行銷規劃', ref: 'https://www.crowdfunding.azure-ocean.tw/'},
+  { category: 'project', class: 'p-one', h1: '「為湛而戰」', h2: '海洋垃圾移除計畫', tag: '#群募行銷規劃', ref: 'https://www.crowdfunding.azure-ocean.tw/' },
   { category: 'project', class: 'p-two', h1: '', h2: '社企流 iLab 育成計畫', tag: '#商業規劃 #專案管理 #創業輔導', ref: 'https://ilab.seinsights.asia/' },
   { category: 'project', class: 'p-three', h1: '保德信人壽 X 社企流', h2: '做你人生的財務長', tag: '#專案管理 #商業開發', ref: 'https://pot-financialwellness.seinsights.asia/' },
   { category: 'project', class: 'p-four', h1: '永齡教育基金會 X 社企流', h2: '明日農村', tag: '#專案管理 #商業開發', ref: 'http://www.rethinkingrural.seinsights.asia/' },
@@ -19,10 +19,10 @@ filterBar.addEventListener('click', function (event) {
 
   if (target.classList.contains('filter-all')) {
     console.log(target)
-    for (let i =0; i < portfolios.length; i++) {
+    for (let i = 0; i < portfolios.length; i++) {
 
       rawHTML +=
-      `<div class="card-portfolio ${portfolios[i].class} ${portfolios[i].category}">
+        `<div class="card-portfolio ${portfolios[i].class} ${portfolios[i].category}">
           <div class="mask">
             <h5>${portfolios[i].h1}</h5>
             <h5>${portfolios[i].h2}</h5>
@@ -62,7 +62,7 @@ filterBar.addEventListener('click', function (event) {
             </a>
           </div>
         </div>`
-    } 
+    }
   } else if (target.classList.contains('filter-front-end')) {
     let filterFrontend = []
     filterFrontend = portfolios.filter((item) => item.category === 'front-end')
@@ -86,15 +86,15 @@ filterBar.addEventListener('click', function (event) {
           </div>
         </div>`
     }
-  
+
   } else if (target.classList.contains('filter-publication')) {
     console.log(target)
     let filterPublication = []
     filterPublication = portfolios.filter((item) => item.category === 'publication')
 
     for (let i = 0; i < filterPublication.length; i++) {
-    rawHTML +=
-      `<div class="card-portfolio ${filterPublication[i].class} ${filterPublication[i].category}">
+      rawHTML +=
+        `<div class="card-portfolio ${filterPublication[i].class} ${filterPublication[i].category}">
           <div class="mask">
             <h5>${filterPublication[i].h1}</h5>
             <h5>${filterPublication[i].h2}</h5>
@@ -114,7 +114,6 @@ filterBar.addEventListener('click', function (event) {
   } else {
     return
   }
-    cardsWrap.innerHTML = rawHTML
+  cardsWrap.innerHTML = rawHTML
 })
 
-  
